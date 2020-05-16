@@ -22,3 +22,9 @@ def stravaAuthentication(request):
 
 def sampleData(request):
 	return HttpResponse("In sample data ")
+
+def athlete_info(request, ath_id):
+	return render(request, 'strava/athlete_info.html', {'id':ath_id})
+
+def start_end(request, ath_id):
+	return render(request, 'strava/start_end.html', {'file_name':"strava/startEndData/Athelete_" + str(ath_id) + ".html", 'id':ath_id})
