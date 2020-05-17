@@ -28,3 +28,6 @@ def athlete_info(request, ath_id):
 
 def start_end(request, ath_id):
 	return render(request, 'strava/start_end.html', {'file_name':"strava/startEndData/Athelete_" + str(ath_id) + ".html", 'id':ath_id})
+
+def rest_spots(request,ath_id):
+	return render(request,'strava/restspots.html',{'file_name':"strava/RestSpots_Data/athlete_"+str(ath_id)+".html",'id':ath_id})

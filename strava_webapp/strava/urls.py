@@ -9,4 +9,5 @@ urlpatterns = [
     path('sampleData/', views.sampleData, name='sample-data'),
     path('athlete/<int:ath_id>/', views.athlete_info, name='athlete_info'),
     path('athlete/<int:ath_id>/start_end', views.start_end, name='start_end'),
+    path('athlete/<int:ath_id>/rest_spots', views.rest_spots, name='rest_spots'),
 ]
