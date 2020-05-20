@@ -31,3 +31,6 @@ def start_end(request, ath_id):
 
 def rest_spots(request,ath_id):
 	return render(request,'strava/restspots.html',{'file_name':"strava/RestSpots_Data/athlete_"+str(ath_id)+".html",'id':ath_id})
+
+def frequent_spots(request, ath_id):
+	return render(request, 'strava/frequent_spots.html', {'file_name':"strava/FrequentSpotsData/athlete "+str(ath_id)+"frequency_and_time_plots_.html",'id':ath_id})
